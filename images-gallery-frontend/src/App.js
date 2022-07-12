@@ -2,16 +2,14 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header";
 import Search from "./Components/Search";
-
+const Unsplas_Key=process.env.REACT_APP_UNSPLASH_KEY
 const App = () => {
   const [word, setWord] = useState("");
-
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    console.log(word);
+    
   };
-
-
+  
   return (
     <div className="App">
       <Header title="Images Gallery" />
@@ -19,5 +17,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
