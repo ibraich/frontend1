@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Container, Jumbotron } from "react-bootstrap";
 
 const Welcome = () => (
-  <Container>
+  <Container className="mt-4">
     <h1>Images Gallery</h1>
     <p>
       This tool provides a random photograph of a word of your choosing using
